@@ -1,6 +1,6 @@
 # require modules here
 
-def load_library(file_path)
+def load_library()
   library = YAML.load_file(f)
   result = {"get_meaning" => {}, "get_emoticon" => {}}
   library.each do |meaning, emoticons|
